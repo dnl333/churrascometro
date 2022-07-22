@@ -1,44 +1,56 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Podkova:wght@500&display=swap');
+@font-face {
+    font-family: main;
+    src: url(fonte/Mainstay.ttf);}
 
 body{
-    background-image: url(imagens/fundo.jpg);
+    padding: 0;
+    margin: 0;
+    background-image: url(imagens/fundo.png);
     background-repeat: repeat;
-    background-size: cover;}
+    background-size:100%;}
 
 .intro{
+    margin-top: 0px;
+    padding: 30px;
     color:white; 
-    background-color: #000000a8;
-    font-family: 'Podkova';
-    max-width: 700px;
-    margin: auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: #00000000;
+    font-family: 'main';
+    max-width: 100%;
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-weight: 200;
     text-align: center;
-    text-shadow: 5px 5px 5px black;
-    line-height: 37px;
-    margin-top: 10px;
-}
+    text-shadow: 3px 2px 20px rgb(255, 125, 38);}
     
 @media screen and (max-width:600px){
-    .intro{font-size: 23px;
-        line-height: 27px;}}
+    .intro{font-size: 33px;
+        line-height: 27px;
+        background-color: rgba(0, 0, 0, 0.89);}}
+
 
 .container{
-    color: white;
+    color: rgb(255, 252, 61);
+    text-shadow: 5px 5px 15px rgb(0, 0, 0);
     text-align: center;
     max-width: 300px;
     margin: auto;
-    background-image: url(imagens/fogo.jpg);
+    background-color: #000000c0;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
     padding-top: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-family: 'Podkova', Helvetica, sans-serif;
-    font-size: 19px;}
+    font-size: 19px;
+    border-style: inset;
+    border-color: white;}
+
+    @media screen and (max-width:600px){
+        .container{background-color: #000000f1;}}
+
 
 input{
     border-radius: 4px;
@@ -61,7 +73,7 @@ button{
     margin-bottom: 15px;}
 
 #resultado{
-    background-color: #0000002d;
+    
     font-weight: 800;
     border-radius: 4px;
     font-size: 20px;}
